@@ -21,8 +21,8 @@ function checkboxRequieredValidator(cbs, validator) {
     })
     if (!check) {
         event.preventDefault();
-        validator.show();
+        document.querySelector(validator).show();
     }
-    else {validator.hide();}
+    else {document.querySelector(validator).hide();}
        
 }
