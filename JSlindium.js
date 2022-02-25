@@ -19,18 +19,10 @@ function checkboxRequieredValidator(cbs, validator) {
     document.querySelectorAll(cbs).forEach(function (e) {
         check |= e.checked;
     })
-
     if (!check) {
         event.preventDefault();
-        
-       validator.show();
-       //document.querySelector(validator).classList.remove("d-none");
-       //document.querySelector(validator).classList.add("d-inline-block");
+        validator.show();
     }
-    else {
-        validator.hide();
-        //document.querySelector(validator).classList.remove("d-inline-block");
-        //document.querySelector(validator).classList.add("d-none");
-    }
-
+    else {validator.hide();}
+       
 }
