@@ -8,6 +8,7 @@ Exemple d'utilisation en import
 #
 
 #site.js --> on import uniquement les fonction que dont on a besoin
+
 import { noenterkey } from './modules/JSlindium.js';
 document.addEventListener('keypress', function () {  
     noenterkey();
